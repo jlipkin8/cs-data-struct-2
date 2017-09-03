@@ -1,0 +1,83 @@
+Discussion Questions
+
+
+Recursion
+    1. 
+        Recursion occurs when a function calls itself. 
+
+    2. 
+        When recursing, it's necessary to have a base case to prevent infinite 
+        recursion.
+
+
+Graphs
+    
+    1. 
+        A graph is a collection of nodes where two nodes may be connected by an 
+        edge. 
+
+    2. 
+        Trees and graphs are similiar, but graphs may contain loops while trees 
+        are acyclic.
+
+    3. 
+        Six Degrees of Kevin Bacon would be a good to model with a graph. 
+
+
+Performance of Different Data Structurs
+
+    Data Structure = [Index, Search, Add-R, Add-L, Pop-L, Pop-R]
+
+Python List(Array) = [O(1) ,  O(n) , O(1) , O(n) , O(n) , O(1)]; 
+
+Linked-List        = [O(n) ,  O(n) , O(n) , O(1) , O(1) , O(n)]; *if we dont have a tail attribute
+
+Doubly-L-List      = [O(n) ,  O(n) , O(1) , O(1) , O(1) , O(1)]; 
+
+Queue(as Array)    = [  X  ,   X   , O(1) ,  X   , O(n) ,  X  ]; 
+
+Queue(as LL)       = [  X  ,   X   , O(1) ,  X   , O(1) ,  X  ];
+
+Stack(as Array)    = [  X  ,   X   , O(1) ,  X   ,  X   , O(1)]; 
+
+Deque(as DLL)      = [  X  ,   X   , O(1)  , O(1)  , O(1)  , O(1) ];
+
+
+Fill in Runtime and Memory
+
+    Data Structure          = [  Get , Add , Delete , Iterate , Memory]
+
+    Dictionary(Hash Map)    = [ O(1) , O(1),  O(1)  ,  O(n)   , medium]
+
+    Set(Hash Map)           = [ O(1) , O(1),  O(1)  ,  O(n)   , medium]
+
+    BST                     = [O(logn), O(logn),  O(logn)  ,  O(logn)   , small]
+
+    Tree                    = [O(n)  , O(1) , O(1), O(n), small]
+
+
+Sorting
+    
+    1. Bubble Sort
+        Inspect the first element of the array. If the number is smaller than the
+        next, swap. Check until you have compared the number with every other one. 
+        The bigger numbers should bubble up to the "top" of the array. 
+
+    2. Merge Sort
+        Let's assume we are starting with two pre-sort arrays that we want to merge
+        into one assorted array. Intialize an empty array. Compare the first item 
+        of each sorted array. The smaller item is appended to the newly intialized 
+        array. Check the next item in the array that just pushed, and compare that to 
+        the item of the other array. Keep appending the smaller of the two pointed at
+        items in the pre-sorted arrays. 
+
+    3. Quick Sort Algo
+        Choose a pivot element from the array and create three additional arrays
+        (lo, hi, equal). Iterate through the array, if the currently inspected element 
+        is less than the pivot element, push it to the lo array. If the currently 
+        inspected element is more than the pivot element, push it to the hi array. 
+        If the currently inspected element is equal to the pivot element than push that
+        to the equal array. Keep doing this for all the elements in the array. 
+
+
+
